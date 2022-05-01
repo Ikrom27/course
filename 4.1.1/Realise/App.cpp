@@ -14,7 +14,7 @@ void Application::build_tree_objects()
 	std::cin >> headerName;
 	name = headerName;
 
-	Derived* stickObject = new Derived("", nullptr);
+	Derived* stickObject = new Derived("");
 	Base* headerObject = this;
 
 	while (true) {

@@ -3,7 +3,7 @@
 
 int main()
 {
-	Application q(nullptr);		// Создание объекта
-	q.build_tree_objects();		// Строит дерево
+	Application q(nullptr);
+	q.build_tree_objects();
 	return q.exec_app();
 }
