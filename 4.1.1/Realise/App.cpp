@@ -1,33 +1,34 @@
 #include "App.h"
+#include "Derived.h"
 
-Application::Application(Base* p) :Base("root", p)
+
+Application::Application(Base* _head) :Base("root", _head)
 {
-	head = p;
+	head = _head;
 }
 
 void Application::build_tree_objects()
 {
 	std::string	headerName, stickName;
+	
 	std::cin >> headerName;
-
 	name = headerName;
 
-	Base* stickObject = new Base("", nullptr);
+	Derived* stickObject = new Derived("", nullptr);
 	Base* headerObject = this;
 
 	while (true) {
 		std::cin >> headerName >> stickName;
+		
 		if (headerName == stickName) {
 			return;
 		}
 		else if (headerName == headerObject->get_name() or headerName == stickObject->get_name()) {
+			
 			if (headerName == stickObject->get_name()) {
 				headerObject = stickObject;
-				stickObject = new Base(stickName, headerObject);
 			}
-			else {
-				stickObject = new Base(stickName, headerObject);
-			}
+			stickObject = new Derived(stickName, headerObject);
 		}
 	}
 }

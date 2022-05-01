@@ -4,10 +4,10 @@
 
 
 using namespace std;
-Base::Base(std::string _name, Base* head)
+Base::Base(std::string _name, Base* _head)
 {
 	name = _name;
-	head = head;
+	head = _head;
 	if (head != nullptr) {
 		head->sticks.emplace(head->sticks.end(), this);
 	}
@@ -23,29 +23,25 @@ std::string Base::get_name()
 	return name;
 }
 
-void Base::display()		// root_object.display()
+void Base::display()
 {
-	Base* now = this;			// Указатель now на самый последний объект дерева
-	if (now->get_head() == nullptr) {
-		std::cout << now->get_name() << endl;
+	if (get_head() == nullptr) {
+		std::cout << get_name();
 	}
-	if (now->sticks.size()) {		// Если не пустой
-		std::cout << now->get_name();
-	}
-	for (int i = 0; i < sticks.size(); i++) {	// Выводим все подчинеяющиеся ему ветки
-		std::cout << " " << now->sticks[i]->get_name();
-	}
-	if (now->sticks.size()) {
-		std::cout << endl;
+	if (sticks.size()) {								//переход на новую строку и выводит имя этого объекта
+		std::cout << endl << get_name();
 	}
 	for (int i = 0; i < sticks.size(); i++) {
-		now->sticks[i]->display();		// Используем рекурсию
+		std::cout << "  " << sticks[i]->get_name();		//потом все подчиняющиеся объекты
+	}
+	for (int i = 0; i < sticks.size(); i++) {			//Повторяем все это для подчиняющихся объектов
+		sticks[i]->display();
 	}
 }
 
 void Base::change_head(Base* new_head)
 {
-	if (get_head()) {	// Если голова не пустая
+	if (get_head() != nullptr) {	// Если голова не пустая
 		head->sticks.erase(find(head->sticks.begin(), head->sticks.end(), this));
 	}
 	head = new_head;
@@ -56,18 +52,3 @@ Base* Base::get_head()
 {
 	return head;
 }
-
-/*
-Base_class* Base_class::find_object(std::string _name)
-{
-	Base_class* _head = nullptr;
-	if (this->get_name() == _name) {
-		return this;
-	}
-	else {
-		for (int i = 0; i < this->sticks.size(); i++) {
-			_head = this->sticks[i]->find_object(_name);
-		}
-		return _head;
-	}
-} */
