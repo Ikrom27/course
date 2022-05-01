@@ -4,28 +4,28 @@
 
 
 using namespace std;
-Base_class::Base_class(std::string _name, Base_class* head)
+Base::Base(std::string _name, Base* head)
 {
-	this->name = _name;
-	this->head = head;
+	name = _name;
+	head = head;
 	if (head != nullptr) {
-		this->head->sticks.emplace(this->head->sticks.end(), this);
+		head->sticks.emplace(head->sticks.end(), this);
 	}
 }
 
-void Base_class::set_name(std::string _name)
+void Base::set_name(std::string _name)
 {
-	this->name = _name;
+	name = _name;
 }
 
-std::string Base_class::get_name()
+std::string Base::get_name()
 {
-	return this->name;
+	return name;
 }
 
-void Base_class::display()		// root_object.display()
+void Base::display()		// root_object.display()
 {
-	Base_class* now = this;			// Указатель now на самый последний объект дерева
+	Base* now = this;			// Указатель now на самый последний объект дерева
 	if (now->get_head() == nullptr) {
 		std::cout << now->get_name() << endl;
 	}
@@ -43,20 +43,21 @@ void Base_class::display()		// root_object.display()
 	}
 }
 
-void Base_class::replace_head(Base_class* new_head)
+void Base::change_head(Base* new_head)
 {
-	if (this->get_head()) {	// Если голова не пустая
-		this->head->sticks.erase(find(this->head->sticks.begin(), this->head->sticks.end(), this));
+	if (get_head()) {	// Если голова не пустая
+		head->sticks.erase(find(head->sticks.begin(), head->sticks.end(), this));
 	}
-	this->head = new_head;
-	this->head->sticks.emplace(this->head->sticks.end(), this);
+	head = new_head;
+	head->sticks.emplace(head->sticks.end(), this);
 }
 
-Base_class* Base_class::get_head()
+Base* Base::get_head()
 {
-	return this->head;
+	return head;
 }
 
+/*
 Base_class* Base_class::find_object(std::string _name)
 {
 	Base_class* _head = nullptr;
@@ -69,4 +70,4 @@ Base_class* Base_class::find_object(std::string _name)
 		}
 		return _head;
 	}
-}
+} */

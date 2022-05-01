@@ -1,40 +1,39 @@
 #include "App.h"
 
-app::app(Base_class* p) :Base_class("root", p)
+Application::Application(Base* p) :Base("root", p)
 {
-	this->head = p;
+	head = p;
 }
 
-void app::build_tree_objects()
+void Application::build_tree_objects()
 {
 	std::string	headerName, stickName;
 	std::cin >> headerName;
 
-	this->name = headerName;
+	name = headerName;
 
-	Base_class* stickObject = new Base_class("", nullptr);
-	Base_class* headerObject = this;
-	Base_class* _head;
+	Base* stickObject = new Base("", nullptr);
+	Base* headerObject = this;
 
-	while (headerName != stickName) {
-		while (true) {
-			std::cin >> headerName >> stickName;
-			_head = this->find_object(headerName);
-			if (headerName == stickName) {
-				break;
-			}
-			if (_head) {
-				stickObject = new Base_class(stickName, _head);
+	while (true) {
+		std::cin >> headerName >> stickName;
+		if (headerName == stickName) {
+			return;
+		}
+		else if (headerName == headerObject->get_name() or headerName == stickObject->get_name()) {
+			if (headerName == stickObject->get_name()) {
+				headerObject = stickObject;
+				stickObject = new Base(stickName, headerObject);
 			}
 			else {
-				stickObject = new Base_class(stickName, headerObject);
+				stickObject = new Base(stickName, headerObject);
 			}
 		}
 	}
 }
 
-int app::exec_app()
+int Application::exec_app()
 {
-	this->display();
+	display();
 	return 0;
 }

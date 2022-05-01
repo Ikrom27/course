@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Derived.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="Base.h" />
+    <ClInclude Include="Derived.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

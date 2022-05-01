@@ -2,19 +2,19 @@
 #define BASE_H
 #include <string>
 #include <vector>
-class Base_class	// »м€ класса
+class Base	// »м€ класса
 {
 protected:
 	std::string name;	// »м€ объекта
-	Base_class* head;	// ”казатель на головной объект
-	std::vector<Base_class*> sticks;	// ”казатели на подчин€ющиес€ объекты (ветки)
+	Base* head;	// ”казатель на головной объект
+	std::vector<Base*> sticks;	// ”казатели на подчин€ющиес€ объекты (ветки)
 public:
-	Base_class(std::string _name, Base_class* _head=nullptr);
+	Base(std::string _name, Base* _head=nullptr);
 	void set_name(std::string _name);	//метод определени€ имени объекта
 	std::string get_name();
 	void display();
-	void replace_head(Base_class* new_head );
-	Base_class* get_head();
-	Base_class* find_object(std::string _name);
+	void change_head(Base* new_head );
+	Base* get_head();
+	//Base* find_object(std::string _name);
 };
 #endif
