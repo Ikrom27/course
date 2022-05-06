@@ -4,12 +4,11 @@
 #include <vector>
 class Base
 {
-protected:
+private:
 	std::string name;
 	Base* head;
 	std::vector<Base*> sticks;
 public:
-	Base() {};
 	Base(std::string _name, Base* _head = nullptr);
 	void set_name(std::string _name);
 	std::string get_name();

@@ -28,7 +28,7 @@ void Base::display()
 	if (get_head() == nullptr) {
 		std::cout << get_name();
 	}
-	if (sticks.size()) {								//переход на новую строку и выводит имя этого объекта
+	if (sticks.size()) {								//переход на новую строку и выводит имя этого объекта root 1 2 3
 		std::cout << endl << get_name();
 	}
 	for (int i = 0; i < sticks.size(); i++) {

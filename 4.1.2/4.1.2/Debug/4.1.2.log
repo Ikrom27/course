@@ -1,0 +1,8 @@
+﻿  base.cpp
+C:\Users\Ikrom\Desktop\course\4.1.2\4.1.2\base.cpp(9,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ikrom\Desktop\course\4.1.2\4.1.2\base.cpp(20,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ikrom\Desktop\course\4.1.2\4.1.2\base.cpp(31,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Ikrom\Desktop\course\4.1.2\4.1.2\base.cpp(42,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  main.cpp
+  Создание кода...
+  4.1.2.vcxproj -> C:\Users\Ikrom\Desktop\course\4.1.2\Debug\4.1.2.exe

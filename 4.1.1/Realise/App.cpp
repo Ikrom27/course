@@ -2,9 +2,8 @@
 #include "Derived.h"
 
 
-Application::Application(Base* _head) :Base("root", _head)
+Application::Application(Base* _head) :Base("root")
 {
-	head = _head;
 }
 
 void Application::build_tree_objects()
@@ -12,7 +11,7 @@ void Application::build_tree_objects()
 	std::string	headerName, stickName;
 	
 	std::cin >> headerName;
-	name = headerName;
+	set_name(headerName);
 
 	Derived* stickObject = new Derived("");
 	Base* headerObject = this;

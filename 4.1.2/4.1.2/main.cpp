@@ -7,8 +7,7 @@ int main()
 {
 	string name;
 	int field;
-	cin >> name;
-	cin >> field;
-	cl_4* obj = new cl_4(name, field);
+	cin >> name >> field;
+	cl_1* obj = new cl_1(name, field);
 	obj->print();
 }

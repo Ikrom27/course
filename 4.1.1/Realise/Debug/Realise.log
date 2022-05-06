@@ -1,4 +1,7 @@
 ﻿  App.cpp
+  Base.cpp
+C:\Users\Ikrom\Desktop\course\4.1.1\Realise\Base.cpp(34,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Ikrom\Desktop\course\4.1.1\Realise\Base.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
   Main.cpp
   Создание кода...
   Realise.vcxproj -> C:\Users\Ikrom\Desktop\course\4.1.1\Debug\Realise.exe

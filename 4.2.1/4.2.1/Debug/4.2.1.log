@@ -1,0 +1,73 @@
+﻿  classes.cpp
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(19,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(28,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(37,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(46,8): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(55,8): error C2512: class_2: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(15,7): message : см. объявление "class_2"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(55,8): error C2512: class_3: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(24,7): message : см. объявление "class_3"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(64,8): error C2512: class_4: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(33,7): message : см. объявление "class_4"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(64,8): error C2512: class5: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(42,7): message : см. объявление "class5"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(73,8): error C2512: class6: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(51,7): message : см. объявление "class6"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(73,8): error C2512: class7: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(60,7): message : см. объявление "class7"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(16,1): error C2084: функция "class_2::class_2(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(19): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(16,1): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(32,1): error C2084: функция "class_3::class_3(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(28): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(32,1): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(48,1): error C2084: функция "class_4::class_4(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(37): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(48,1): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(64,1): error C2084: функция "class5::class5(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(46): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(64,1): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(79,35): error C2084: функция "class6::class6(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(55): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(80,1): error C2264: class_2::class_2: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(80,1): error C2264: class_3::class_3: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(98,35): error C2084: функция "class7::class7(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(64): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(99,1): error C2264: class_4::class_4: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(99,1): error C2264: class5::class5: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(117,35): error C2084: функция "class8::class8(std::string)" уже имеет текст реализации
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(73): message : см. предыдущее определение "{ctor}"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(118,1): error C2264: class6::class6: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(118,1): error C2264: class7::class7: ошибка в определении или объявлении функции; функция не вызвана
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(123,17): error C2385: неоднозначный уровень доступа "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.cpp(123,26): error C2385: неоднозначный уровень доступа "class_1"
+  main.cpp
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(19,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(28,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(37,9): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(46,8): error C2512: class_1: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(6,7): message : см. объявление "class_1"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(55,8): error C2512: class_2: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(15,7): message : см. объявление "class_2"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(55,8): error C2512: class_3: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(24,7): message : см. объявление "class_3"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(64,8): error C2512: class_4: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(33,7): message : см. объявление "class_4"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(64,8): error C2512: class5: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(42,7): message : см. объявление "class5"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(73,8): error C2512: class6: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(51,7): message : см. объявление "class6"
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(73,8): error C2512: class7: нет подходящего конструктора по умолчанию
+C:\Users\Ikrom\Desktop\course\4.2.1\4.2.1\classes.h(60,7): message : см. объявление "class7"
+  Создание кода...

@@ -5,40 +5,43 @@
 using namespace std;
 
 cl_1::cl_1(string name, int field) {
-	this->name = name + "_1";
-	this->field = field;
+	name_ = name + "_1";
+	field_ = pow(field, 1);
 }
 
 void cl_1::print() {
-	cout << this->name << " " << this->field << endl;
+	cout << name_ << " " << field_ << endl;
+	cl_2* temp = new cl_2(name, field);
+	temp->print();
 }
 
 cl_2::cl_2(string name, int field) : cl_1(name, field) {
-	this->name = name + "_2";
-	this->field = pow(field, 2);
+	name_ = name + "_2";
+	field_ = pow(field, 2);
 }
 
 void cl_2::print() {
-	cl_1::print();
-	cout << this->name << " " << this->field << endl;
+	cout << name_ << " " << field_ << endl;
+	cl_3* temp = new cl_3(name_, field_);
+	temp->print();
 }
 
 cl_3::cl_3(string name, int field) :cl_2(name, field) {
-	this->name = name + "_3";
-	this->field = pow(field, 3);
+	name_ = name + "_3";
+	field_ = pow(field, 3);
 }
 
 void cl_3::print() {
-	cl_2::print();
-	cout << this->name << " " << this->field << endl;
+	cout << name_ << " " << field_ << endl;
+	cl_4* temp = new cl_4(name_, field_);
+	temp->print();
 }
 
 cl_4::cl_4(string name, int field) :cl_3(name, field) {
-	this->name = name + "_4";
-	this->field = pow(field, 4);
+	name_ = name + "_4";
+	field_ = pow(field, 4);
 }
 
 void cl_4::print() {
-	cl_3::print();
-	cout << this->name << " " << this->field;
+	cout << name_ << " " << field_;
 }
