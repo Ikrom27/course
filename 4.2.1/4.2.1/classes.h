@@ -1,84 +1,77 @@
-#ifndef _CL_S
-#define _CL_S
+#ifndef __CLASSES_H
+#define __CLASSES_H
 #include <string>
+#include <iostream>
+using namespace std;
 
-
-class class_1 {
+class cl_1 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class_1(std::string ident);
-	class_1() {};
-	virtual void display(bool step = 0);
+	cl_1(string name);
+	void get_name_first();
 };
 
 
-class class_2 : public class_1 {
+class cl_2 : public cl_1 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class_2(std::string ident) {};
-	class_2() {};
-	void display(bool step = 0) override;
+	cl_2(string name);
+	void get_name();
 };
 
 
-class class_3 : public class_1 {
+class cl_3 : public cl_1 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class_3(std::string ident) {};
-	void display(bool step = 0) override;
+	cl_3(string name);
+	void get_name();
 };
 
 
-class class_4 : public class_1 {
+class cl_4 : public cl_1 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class_4(std::string ident) {};
-	class_4() {};
-	void display(bool step = 0) override;
+	cl_4(string name);
+	void get_name();
 };
 
 
-class class5 : public class_1 {
+class cl_5 : public cl_1 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class5(std::string ident) {};
-	class5() {};
-	void display(bool step = 0) override;
+	cl_5(string name);
+	void get_name();
 };
 
 
-class class6 : public class_2, public class_3 {
+class cl_6 : public cl_2, public cl_3 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class6(std::string ident) {};
-	class6() {};
-	void display(bool step = 0) override;
+	cl_6(string name);
+	void get_name();
 };
 
 
-class class7 : public class_4, public class5 {
+class cl_7 : public cl_4, public cl_5 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class7(std::string ident) {};
-	class7() {};
-	void display(bool step = 0) override;
+	cl_7(string name);
+	void get_name();
 };
 
 
-class class8 : public class6, public class7 {
+class cl_8 : public cl_6, public cl_7 {
 private:
-	std::string ident_;
+	string name;
 public:
-	class8(std::string ident) {};
-	class8() {};
-	void display(bool step = 0) override;
+	cl_8(string name);
+	void get_name();
 };
-
 #endif

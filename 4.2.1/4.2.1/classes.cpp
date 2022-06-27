@@ -1,136 +1,68 @@
 #include "classes.h"
+#include <string>
 #include <iostream>
+using namespace std;
 
 
-class_1::class_1(std::string ident)
-{
-	ident_ = ident + "_1";
+cl_1::cl_1(string name) {
+	this->name = name + "_1";
 }
-void class_1::display(bool step)
-{
-	std::cout << ident_ << std::endl;
-};
-
-
-class_2::class_2(std::string ident)
-{
-	ident_ = ident + "_2";
-};
-void class_2::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_1::display();
-	}
+void cl_1::get_name_first() {
+	cout << this->name << endl;
 }
 
 
-class_3::class_3(std::string ident)
-{
-	ident_ = ident + "_3";
-};
-void class_3::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_1::display();
-	}
+cl_2::cl_2(string name) :cl_1(name) {
+	this->name = name + "_2";
+}
+void cl_2::get_name() {
+	cout << this->name << endl;
 }
 
 
-class_4::class_4(std::string ident)
-{
-	ident_ = ident + "_4";
+cl_3::cl_3(string name) :cl_1(name) {
+	this->name = name + "_3";
 }
-void class_4::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_1::display();
-	}
+void cl_3::get_name() {
+	cout << this->name << endl;
 }
 
 
-class5::class5(std::string ident)
-{
-	ident_ = ident + "_5";
+cl_4::cl_4(string name) :cl_1(name) {
+	this->name = name + "_4";
 }
-void class5::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_1::display();
-	}
+void cl_4::get_name() {
+	cout << this->name << endl;
 }
 
 
-class6::class6(std::string ident) : class_2(ident), class_3(ident)
-{
-	ident_ = ident + "_6";
+cl_5::cl_5(string name) :cl_1(name) {
+	this->name = name + "_5";
 }
-void class6::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_2::display();
-		class_3::display();
-		class_2::display(1);
-		class_3::display(1);
-	}
+void cl_5::get_name() {
+	cout << this->name << endl;
 }
 
 
-class7::class7(std::string ident) : class_4(ident), class5(ident)
-{
-	ident_ = ident + "_7";
+cl_6::cl_6(string name) :cl_2(name), cl_3(name) {
+	this->name = name + "_6";
 }
-void class7::display(bool step)
-{
-	if (step) {
-		std::cout << ident_ << std::endl;
-	}
-	else
-	{
-		class_4::display();
-		class_4::display(1);
-		class5::display(1);
-	}
+void cl_6::get_name() {
+	cout << this->name << endl;
 }
 
 
-
-class8::class8(std::string ident) : class6(ident), class7(ident)
-{
-	ident_ = ident + "_8";
+cl_7::cl_7(string name) :cl_4(name), cl_5(name) {
+	this->name = name + "_7";
 }
-void class8::display(bool step)
-{
-	class6::class_1::display();
-	class6::display();
-	class7::display();
-	class6::display(1);
-	class7::display(1);
-	std::cout << ident_;
+void cl_7::get_name() {
+	cout << this->name << endl;
 }
 
 
-
-
-
-
-
+cl_8::cl_8(string name) :cl_6(name), cl_7(name) {
+	this->name = name + "_8";
+}
+void cl_8::get_name() {
+	cout << this->name;
+}
